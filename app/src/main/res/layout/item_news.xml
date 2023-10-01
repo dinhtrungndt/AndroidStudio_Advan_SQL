@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VnExpress"
+        android:layout_marginLeft="150dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0066FF"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txt__cdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0066FF"
+            android:paddingTop="10dp"/>
+        <TextView
+            android:id="@+id/txtPubDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#40D1C0"
+            android:paddingTop="10dp"/>
+        <TextView
+            android:id="@+id/txtLink"
+            android:layout_width="match_parent"
+            android:textColor="#FF0000"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"/>
+        <TextView
+            android:id="@+id/txtGuid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="50dp"
+            android:textColor="#FF0000"
+            android:drawableLeft="@drawable/comments_30px"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

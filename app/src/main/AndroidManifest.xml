@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_splash"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_splash"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ASM1_NGUYENDINHTRUNG_PK02294"
+        tools:targetApi="31">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.asm1_nguyendinhtrung_pk02294.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBJa8hZIvFR62Dfadtep0Sqw4A5WfUSU2Y" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name=".Splash_Home"
+            android:exported="true"
+            android:theme="@style/Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home_Activity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity.Support_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Course_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ListCourse_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.RegisteredCourse_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Maps_FPT_Activity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity.News_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ShareContent_Activity"
+            android:exported="true" >
+        </activity>
+
+        <service android:name=".service.LoginService" />
+        <service android:name=".service.ListCourseService" />
+        <service android:name=".service.DangKyVaHuyMHService" />
+    </application>
+
+</manifest>

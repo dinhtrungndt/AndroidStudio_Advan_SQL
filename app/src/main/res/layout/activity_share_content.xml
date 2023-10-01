@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.Support_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#425BD8"
+        app:title="CHIA SẺ NỘI DUNG ĐẾN VỚI MỌI NGƯỜI"
+        app:titleTextColor="@color/white" />
+
+    <EditText
+        android:id="@+id/edtContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập nội dung cần chia sẻ"
+        android:paddingBottom="150dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp">
+
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/txtImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:gravity="start|center"
+            android:text="Thêm hình ảnh" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#425BD8"
+        android:text="Chia sẻ"/>
+
+
+</LinearLayout>

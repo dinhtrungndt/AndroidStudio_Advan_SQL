@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    android:orientation="vertical"
+    tools:context=".activity.Course_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2C56D3"
+        app:title="QUẢN LÝ KHÓA HỌC"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="110dp" />
+
+    <Button
+        android:id="@+id/DangKyKH"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/register"
+        android:backgroundTint="@color/white"
+        android:text="Đăng ký khóa học"
+        android:textAllCaps="false"
+        android:textColor="#575757"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/KhoaHocDDK"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/courses"
+        android:backgroundTint="@color/white"
+        android:text="Khóa học đã đăng ký"
+        android:textAllCaps="false"
+        android:textColor="#575757"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
