@@ -1,4 +1,4 @@
-![image](https://github.com/dinhtrungndt/AndroidStudio_Advan_SQL/assets/127390593/a171ff9b-3b1a-4e10-a15d-43ea04ba3bd5)# This is an advanced class schedule management application: 
+# This is an advanced class schedule management application: 
 # Can log in with Google_Facebook.
 # There are features such as: Course registration, news, maps, social network sharing.
 # App Summary:
